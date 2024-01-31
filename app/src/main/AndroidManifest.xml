@@ -20,6 +20,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".GpsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".PremiumActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".AnimalsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

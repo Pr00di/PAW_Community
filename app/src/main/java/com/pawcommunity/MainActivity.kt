@@ -1,5 +1,6 @@
 package com.pawcommunity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() , View.OnClickListener
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Initialisation des boutons
         btnMap = findViewById(R.id.btn_map)
         btnGps = findViewById(R.id.btn_GPS)
         btnPremium = findViewById(R.id.btn_premium)
@@ -24,19 +27,24 @@ class MainActivity : AppCompatActivity() , View.OnClickListener
         btnSetting = findViewById(R.id.btn_settings)
 
         btnMap.setOnClickListener{
-            setContentView(R.layout.activity_maps)
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
         }
         btnGps.setOnClickListener{
-            setContentView(R.layout.activity_gps)
+            val intent = Intent(this, GpsActivity::class.java)
+            startActivity(intent)
         }
         btnPremium.setOnClickListener{
-            setContentView(R.layout.activity_premium)
+            val intent = Intent(this, PremiumActivity::class.java)
+            startActivity(intent)
         }
         btnAnimals.setOnClickListener{
-            setContentView(R.layout.activity_animals)
+            val intent = Intent(this, AnimalsActivity::class.java)
+            startActivity(intent)
         }
         btnSetting.setOnClickListener{
-            setContentView(R.layout.activity_settings)
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
         }
     }
 
