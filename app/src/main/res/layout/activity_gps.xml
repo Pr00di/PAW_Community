@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MapActivity">
+    tools:context=".GpsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/app_name"
-        android:text="MAPS OF ANIMAL"
+        android:text="LIST OF GPS"
         android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold|italic"

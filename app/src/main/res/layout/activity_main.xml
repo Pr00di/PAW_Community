@@ -59,7 +59,7 @@
             android:background="#B78BC34A"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="145dp"
             android:id="@+id/btn_settings"
             android:text="SETTINGS"
             android:textSize="30dp"
