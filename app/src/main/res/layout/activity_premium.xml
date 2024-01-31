@@ -39,7 +39,7 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:fontFamily="@font/dancing_bold"
-            android:textSize="36sp"
+            android:textSize="56sp"
             android:layout_marginTop="50dp"/>
 
     </LinearLayout>
@@ -68,7 +68,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableStart="@drawable/baseline_person_24"
+                android:drawableStart="@drawable/person"
                 app:drawableTint="@color/app_color"
                 android:drawablePadding="5dp"
                 android:inputType="text" />
@@ -90,7 +90,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableStart="@drawable/baseline_person_24"
+                android:drawableStart="@drawable/lock"
                 app:drawableTint="@color/app_color"
                 android:drawablePadding="5dp"
                 android:inputType="textPassword" />
@@ -107,7 +107,36 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             app:backgroundTint="@color/button_color"
-            app:cornerRadius="30dp" />
+            app:cornerRadius="30dp"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Vous n'avez pas de compte ?"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dm_medium"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="S'inscrire"
+                android:textColor="@color/button_color"
+                android:fontFamily="@font/dm_medium"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 

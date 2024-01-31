@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B78BC34A"
-    android:backgroundTint="#4CAF50"
+    android:background="@color/app_color"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,15 +14,9 @@
         android:gravity="center"
         android:id="@+id/app_name"
         android:text="PAW Community"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="50dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"/>
+        android:fontFamily="@font/dancing_bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,43 +24,43 @@
         android:orientation="vertical">
         <Button
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:id="@+id/btn_map"
             android:text="MAPS"
             android:textSize="30dp"
-            android:background="#B78BC34A"/>
+            android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btn_animals"
             android:text="ANIMALS"
             android:textSize="30dp"
-            android:background="#B78BC34A"/>
+            android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btn_GPS"
             android:text="GPS"
             android:textSize="30dp"
-            android:background="#B78BC34A"/>
+            android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btn_premium"
             android:text="PREMIUM"
             android:textSize="30dp"
-            android:background="#B78BC34A"/>
+            android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="145dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btn_settings"
             android:text="SETTINGS"
             android:textSize="30dp"
-            android:background="#B78BC34A"/>
-
+            android:padding="40dp"/>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
 
 
 
