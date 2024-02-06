@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.pawcommunity.AnimalsActivity.Animal
 
 class MainActivity : AppCompatActivity() , View.OnClickListener
 {
@@ -19,13 +18,6 @@ class MainActivity : AppCompatActivity() , View.OnClickListener
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // Initialiser la liste d'animaux
-        val animaux = listOf(
-            Animal(1 , "Chat" , 3 , "image_chat.png") ,
-            Animal(2 , "Chien" , 5 , "image_chien.png") ,
-            Animal(3 , "Lapin" , 2 , "image_lapin.png") ,
-        )
 
         //Initialisation des boutons
         btnMap = findViewById(R.id.btn_map)

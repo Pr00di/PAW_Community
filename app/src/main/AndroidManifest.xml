@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -35,6 +38,10 @@
         </activity>
         <activity
             android:name=".AnimalsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".AddAnimalActivity"
             android:exported="false">
         </activity>
         <activity
