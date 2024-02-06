@@ -27,15 +27,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:id="@+id/btn_map"
-            android:text="MAPS"
+            android:text="Map"
             android:textSize="30dp"
+            android:backgroundTint="@color/button_color"
             android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_animals"
-            android:text="ANIMALS"
+            android:text="Animals"
             android:textSize="30dp"
+            android:backgroundTint="@color/button_color"
             android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
@@ -43,20 +45,23 @@
             android:id="@+id/btn_GPS"
             android:text="GPS"
             android:textSize="30dp"
+            android:backgroundTint="@color/button_color"
             android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_premium"
-            android:text="PREMIUM"
+            android:text="Abonnement"
             android:textSize="30dp"
+            android:backgroundTint="@color/button_color"
             android:padding="40dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_settings"
-            android:text="SETTINGS"
+            android:text="Paramètres"
             android:textSize="30dp"
+            android:backgroundTint="@color/button_color"
             android:padding="40dp"/>
     </LinearLayout>
 
