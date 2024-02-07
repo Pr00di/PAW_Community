@@ -8,40 +8,38 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() , View.OnClickListener
 {
-    lateinit var btnMap : Button
-    lateinit var btnGps : Button
-    lateinit var btnPremium : Button
-    lateinit var btnAnimals : Button
-    lateinit var btnSetting : Button
-
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         //Initialisation des boutons
-        btnMap = findViewById(R.id.btn_map)
-        btnGps = findViewById(R.id.btn_GPS)
-        btnPremium = findViewById(R.id.btn_premium)
-        btnAnimals = findViewById(R.id.btn_animals)
-        btnSetting = findViewById(R.id.btn_settings)
 
+        val btnMap = findViewById<Button>(R.id.btn_map)
         btnMap.setOnClickListener{
             val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
+
+        val btnGps = findViewById<Button>(R.id.btn_GPS)
         btnGps.setOnClickListener{
             val intent = Intent(this, GpsActivity::class.java)
             startActivity(intent)
         }
+
+        val btnPremium = findViewById<Button>(R.id.btn_premium)
         btnPremium.setOnClickListener{
             val intent = Intent(this, PremiumActivity::class.java)
             startActivity(intent)
         }
+
+        val btnAnimals = findViewById<Button>(R.id.btn_animals)
         btnAnimals.setOnClickListener{
             val intent = Intent(this, AnimalsActivity::class.java)
             startActivity(intent)
         }
+
+        val btnSetting = findViewById<Button>(R.id.btn_settings)
         btnSetting.setOnClickListener{
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)

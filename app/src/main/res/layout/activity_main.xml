@@ -25,44 +25,58 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="125dp"
             android:id="@+id/btn_map"
             android:text="Map"
             android:textSize="30dp"
             android:backgroundTint="@color/button_color"
-            android:padding="40dp"/>
+            android:padding="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_animals"
+            android:layout_marginTop="35dp"
             android:text="Animals"
             android:textSize="30dp"
             android:backgroundTint="@color/button_color"
-            android:padding="40dp"/>
+            android:padding="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_GPS"
+            android:layout_marginTop="35dp"
             android:text="GPS"
             android:textSize="30dp"
             android:backgroundTint="@color/button_color"
-            android:padding="40dp"/>
+            android:padding="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_premium"
+            android:layout_marginTop="35dp"
             android:text="Abonnement"
             android:textSize="30dp"
             android:backgroundTint="@color/button_color"
-            android:padding="40dp"/>
+            android:padding="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_settings"
+            android:layout_marginTop="35dp"
             android:text="Paramètres"
             android:textSize="30dp"
             android:backgroundTint="@color/button_color"
-            android:padding="40dp"/>
+            android:padding="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
     </LinearLayout>
 
 </RelativeLayout>
