@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/app_color"
     tools:context=".PremiumActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_premium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -68,7 +74,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableStart="@drawable/person"
+                android:drawableStart="@menu/person_icon"
                 app:drawableTint="@color/app_color"
                 android:drawablePadding="5dp"
                 android:inputType="text" />
@@ -90,7 +96,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableStart="@drawable/lock"
+                android:drawableStart="@drawable/lock_icon"
                 app:drawableTint="@color/app_color"
                 android:drawablePadding="5dp"
                 android:inputType="textPassword" />
@@ -138,6 +144,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 
 </RelativeLayout>

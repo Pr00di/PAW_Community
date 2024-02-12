@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@menu/map_icon"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/navigation_animal"
+        android:icon="@menu/pets_icon"
+        android:title="Animal" />
+
+    <item
+        android:id="@+id/navigation_subscription"
+        android:icon="@menu/subscription_icon"
+        android:title="Abonnement" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@menu/settings_icon"
+        android:title="Paramètres" />
+</menu>

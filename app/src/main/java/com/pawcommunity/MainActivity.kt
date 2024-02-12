@@ -3,9 +3,11 @@ package com.pawcommunity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import fragment.MapFragment
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() , View.OnClickListener
 {
     override fun onCreate(savedInstanceState: Bundle?)
@@ -15,35 +17,37 @@ class MainActivity : AppCompatActivity() , View.OnClickListener
 
         //Initialisation des boutons
 
-        val btnMap = findViewById<Button>(R.id.btn_map)
-        btnMap.setOnClickListener{
-            val intent = Intent(this, MapActivity::class.java)
-            startActivity(intent)
-        }
+        val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        val btnGps = findViewById<Button>(R.id.btn_GPS)
-        btnGps.setOnClickListener{
-            val intent = Intent(this, GpsActivity::class.java)
-            startActivity(intent)
+        navView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_map -> {
+                    replaceFragment(MapFragment())
+                    true
+                }
+                R.id.navigation_animal -> {
+                    val intent = Intent(this, AnimalsActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.navigation_subscription -> {
+                    replaceFragment(PremiumFragment())
+                    true
+                }
+                R.id.navigation_setting -> {
+                    val intent = Intent(this, SettingsActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
+            }
         }
+    }
 
-        val btnPremium = findViewById<Button>(R.id.btn_premium)
-        btnPremium.setOnClickListener{
-            val intent = Intent(this, PremiumActivity::class.java)
-            startActivity(intent)
-        }
-
-        val btnAnimals = findViewById<Button>(R.id.btn_animals)
-        btnAnimals.setOnClickListener{
-            val intent = Intent(this, AnimalsActivity::class.java)
-            startActivity(intent)
-        }
-
-        val btnSetting = findViewById<Button>(R.id.btn_settings)
-        btnSetting.setOnClickListener{
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
-        }
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
     }
 
     override fun onClick(p0: View?)
