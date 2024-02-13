@@ -31,11 +31,11 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".activities.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,19 +44,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GpsActivity"
+            android:name=".activities.GpsActivity"
             android:exported="false" />
         <activity
-            android:name=".PremiumActivity"
+            android:name=".activities.PremiumActivity"
             android:exported="false" />
         <activity
-            android:name=".AnimalsActivity"
+            android:name=".activities.AnimalsActivity"
             android:exported="false" />
         <activity
-            android:name=".AddAnimalActivity"
+            android:name=".activities.AddAnimalActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:exported="false" />
     </application>
 

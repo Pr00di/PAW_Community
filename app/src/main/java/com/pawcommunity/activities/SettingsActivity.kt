@@ -1,7 +1,8 @@
-package com.pawcommunity
+package com.pawcommunity.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.pawcommunity.R
 
 class SettingsActivity : AppCompatActivity()
 {

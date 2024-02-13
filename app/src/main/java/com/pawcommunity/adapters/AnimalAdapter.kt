@@ -1,4 +1,4 @@
-package com.pawcommunity
+package com.pawcommunity.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.pawcommunity.Animal
+import com.pawcommunity.R
 import com.squareup.picasso.Picasso
 
-//import com.pawcommunity.AnimalsActivity.Animal
+//import com.pawcommunity.activities.AnimalsActivity.Animal
 
 class AnimalAdapter(private val animals: MutableList<Animal>) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
 
@@ -19,13 +21,14 @@ class AnimalAdapter(private val animals: MutableList<Animal>) : RecyclerView.Ada
         val typeView: TextView = view.findViewById(R.id.animal_type)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder
+    {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_animals, parent, false)
+            .inflate(R.layout.item_animals , parent, false)
         return AnimalViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AnimalViewHolder , position: Int) {
         val animal = animals[position]
         holder.nameView.text = animal.name
         holder.ageView.text = animal.age.toString()

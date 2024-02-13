@@ -1,4 +1,4 @@
-package com.pawcommunity
+package com.pawcommunity.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,9 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.pawcommunity.Animal
+import com.pawcommunity.adapters.AnimalAdapter
+import com.pawcommunity.R
 
 @Suppress("DEPRECATION")
 class AnimalsActivity : AppCompatActivity()

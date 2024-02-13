@@ -1,4 +1,4 @@
-package com.pawcommunity
+package com.pawcommunity.adapters
 
 import android.view.View
 import android.widget.ImageView
