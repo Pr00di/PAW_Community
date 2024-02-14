@@ -28,14 +28,13 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="@string/google_map_api_key" />
 
         <activity
-            android:name=".activities.MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:name=".map.MapActivity"
+            android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,19 +43,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.GpsActivity"
+            android:name=".GpsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PremiumActivity"
+            android:name=".subcription.PremiumActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AnimalsActivity"
+            android:name=".animals.AnimalsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddAnimalActivity"
+            android:name=".animals.AddAnimalActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SettingsActivity"
+            android:name=".settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".subcription.InscriptionActivity"
             android:exported="false" />
     </application>
 

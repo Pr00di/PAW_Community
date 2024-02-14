@@ -1,4 +1,4 @@
-package com.pawcommunity.adapters
+package com.pawcommunity.animals
 
 import android.view.View
 import android.widget.ImageView

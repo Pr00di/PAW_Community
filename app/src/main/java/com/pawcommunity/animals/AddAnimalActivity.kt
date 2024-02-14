@@ -1,4 +1,4 @@
-package com.pawcommunity.activities
+package com.pawcommunity.animals
 
 import android.content.Intent
 import android.os.Bundle
@@ -64,6 +64,13 @@ class AddAnimalActivity : AppCompatActivity()
                 .maxResultSize(720, 720)
                 .start(IMAGE_REQUEST_CODE)
         }
+
+        val backBtn = findViewById<ImageView>(R.id.backbtnAddAnimals)
+
+        backBtn.setOnClickListener {
+            val intent = Intent(this, AnimalsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int , resultCode: Int , data: Intent?)
@@ -76,6 +83,9 @@ class AddAnimalActivity : AppCompatActivity()
             imageUri = data?.data.toString()
             imageView.setImageURI(data?.data)
         }
+
+
+
 
 
     }

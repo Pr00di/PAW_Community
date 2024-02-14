@@ -1,4 +1,4 @@
-package com.pawcommunity
+package com.pawcommunity.models
 
 import java.io.Serializable
 

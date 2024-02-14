@@ -1,4 +1,4 @@
-package com.pawcommunity.activities
+package com.pawcommunity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

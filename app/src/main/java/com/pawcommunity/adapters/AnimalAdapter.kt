@@ -6,11 +6,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.pawcommunity.Animal
+import com.pawcommunity.models.Animal
 import com.pawcommunity.R
 import com.squareup.picasso.Picasso
 
-//import com.pawcommunity.activities.AnimalsActivity.Animal
+//import com.pawcommunity.animals.AnimalsActivity.Animal
 
 class AnimalAdapter(private val animals: MutableList<Animal>) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
 

@@ -1,13 +1,16 @@
-package com.pawcommunity.activities
+package com.pawcommunity.animals
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.pawcommunity.Animal
+import com.pawcommunity.models.Animal
 import com.pawcommunity.adapters.AnimalAdapter
+import com.pawcommunity.main.MainActivity
 import com.pawcommunity.R
 
 @Suppress("DEPRECATION")
@@ -16,6 +19,7 @@ class AnimalsActivity : AppCompatActivity()
     lateinit var btnAddAnimal : Button
     private lateinit var recyclerView: RecyclerView
     private lateinit var listAdapter: AnimalAdapter
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -34,6 +38,12 @@ class AnimalsActivity : AppCompatActivity()
         btnAddAnimal.setOnClickListener {
             val intent = Intent(this, AddAnimalActivity::class.java)
             startActivityForResult(intent, AddAnimalActivity.IMAGE_REQUEST_CODE)
+        }
+
+        val backBtnAnimal = findViewById<ImageView>(R.id.back_btn_list_animal)
+        backBtnAnimal.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
 
