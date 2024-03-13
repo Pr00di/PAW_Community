@@ -69,7 +69,7 @@ class AddAnimalActivity : AppCompatActivity()
 
         backBtn.setOnClickListener {
             val intent = Intent(this, AnimalsActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 
@@ -83,11 +83,5 @@ class AddAnimalActivity : AppCompatActivity()
             imageUri = data?.data.toString()
             imageView.setImageURI(data?.data)
         }
-
-
-
-
-
     }
-
 }

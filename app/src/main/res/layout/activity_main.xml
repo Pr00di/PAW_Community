@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/app_color"
+    android:background="#D6C6B9"
     tools:context=".main.MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:gravity="center"
         android:id="@+id/app_name"
         android:text="PAW Community"
-        android:textColor="@color/white"
+        android:textColor="#B4855E"
         android:textSize="50dp"
         android:fontFamily="@font/dancing_bold"/>
 
@@ -27,54 +27,46 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="125dp"
             android:id="@+id/btn_map"
-            android:text="Map"
+            android:text="Maps"
             android:textSize="30dp"
-            android:backgroundTint="@color/button_color"
-            android:padding="25dp"
+            android:backgroundTint="#B4855E"
+            android:padding="30dp"
             android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"/>
+            android:layout_marginRight="60dp"
+            android:src="@drawable/map_icon"
+            android:drawablePadding="16dp"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_animals"
-            android:layout_marginTop="35dp"
-            android:text="Animals"
+            android:layout_marginTop="55dp"
+            android:text="Profil"
             android:textSize="30dp"
-            android:backgroundTint="@color/button_color"
-            android:padding="25dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_GPS"
-            android:layout_marginTop="35dp"
-            android:text="GPS"
-            android:textSize="30dp"
-            android:backgroundTint="@color/button_color"
-            android:padding="25dp"
+            android:backgroundTint="#B4855E"
+            android:padding="30dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_premium"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="55dp"
             android:text="Abonnement"
             android:textSize="30dp"
-            android:backgroundTint="@color/button_color"
-            android:padding="25dp"
+            android:backgroundTint="#B4855E"
+            android:padding="30dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_settings"
-            android:layout_marginTop="35dp"
-            android:text="Paramètres"
+            android:layout_marginTop="55dp"
+            android:text="Compte"
             android:textSize="30dp"
-            android:backgroundTint="@color/button_color"
-            android:padding="25dp"
+            android:backgroundTint="#B4855E"
+            android:padding="30dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"/>
     </LinearLayout>
